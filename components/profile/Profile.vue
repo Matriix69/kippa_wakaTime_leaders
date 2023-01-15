@@ -1,7 +1,7 @@
 <script>
-import Message from '../../assets/icons/message.vue';
+import Message from '../../assets/icons/Message.vue';
 import Hire from '../../assets/icons/hire.vue';
-import Location from '../../assets/icons/location.vue';
+import Location from '../../assets/icons/Location.vue';
 import Link from '../../assets/icons/link.vue';
 import Time from '../../assets/icons/time.vue';
 export default {
