@@ -12,6 +12,10 @@ To avoid `CORS` errors, I could set up a proxy server to forward the request to 
 
 I'm open to improving and learning of better ways to go about this situation, I would appreciate any feedback.
 
+## Set up and clone branch to local machine
+
+Clone the repository `git clone git@github.com:Matriix69/kippa_wakaTime_leaders.git` and cd to project directory
+
 ## Build Setup
 
 ```bash
