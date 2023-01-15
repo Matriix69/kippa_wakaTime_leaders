@@ -4,6 +4,16 @@ export const findUserFromState = (leaders, params, query) => {
     return findUser;
 };
 
+export const convertSeconds = (seconds) => {
+    let hours = Math.floor(seconds / 3600);
+    let minutes = Math.floor((seconds % 3600) / 60);
+    return hours > 0 ? hours + ' hrs ' + minutes + ' min' : minutes + ' min';
+};
+
+export const getPercentage = (num, max) => {
+    return ((num / max) * 100).toFixed(2);
+};
+
 export const mockUserData = [
     {
         rank: 1,
