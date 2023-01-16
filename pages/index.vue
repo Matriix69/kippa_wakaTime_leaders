@@ -4,6 +4,12 @@ import { mapState } from 'vuex';
 export default {
     name: 'LeaderBoardHome',
 
+    async asyncData({ $axios }) {
+        if (process.client) return;
+        const { data } = await $axios.get('https://wakatime.com/api/v1/leaders');
+        const userDate = data?.data;
+        return { userDate };
+    },
     computed: {
         ...mapState({
             leaders: (state) => state.leaders,
@@ -23,10 +29,12 @@ export default {
 
     data() {
         return {
-            userDate: true,
             searchedLeaders: [],
             searchedValue: '',
         };
+    },
+    mounted() {
+        this.$store.commit('SET_LEADERS', this.userDate);
     },
 };
 </script>

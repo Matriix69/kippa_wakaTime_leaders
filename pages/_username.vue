@@ -20,7 +20,7 @@ export default {
         const findUser = findUserFromState(leaders, params, query);
         if (!findUser) return this.redirect();
         this.userData = findUser;
-        console.log(findUser);
+
         setTimeout(() => {
             this.isLoading = false;
         }, 1000);

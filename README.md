@@ -4,14 +4,6 @@ this is a simple application that displays the top 100 users on wakaTime with th
 
 Also, there is a profile page that shows more details about the user with a chart of their most used languages with time
 
-Due to `CORS` issues that could be faced on the client while using wakaTime API, I used `nuxtServerInit` action here to fetch data from wakaTime `API` on the server when the application starts and store it to `vuex` store, This way — since the data doesn't update frequently, the data will be fetched only once from the server and will be stored in the `Vuex` store, so it can be reused throughout the application without needing to re-fetch it and avoid `CORS` errors on the client
-
-since asyncData and fetch also do run on the client side during page navigations (from my test) `CORS` will still be an issue
-
-To avoid `CORS` errors, I could set up a proxy server to forward the request to wakaTime API and return the data and avoid `CORS` errors on client routing — but I assumed that is outside the scope of this test.
-
-I'm open to improving and learning of better ways to go about this situation, I would appreciate any feedback.
-
 ## Set up and clone branch to local machine
 
 Clone the repository `git clone git@github.com:Matriix69/kippa_wakaTime_leaders.git` and cd to project directory
