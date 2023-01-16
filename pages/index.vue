@@ -10,6 +10,7 @@ export default {
         const userDate = data?.data;
         return { userDate };
     },
+
     computed: {
         ...mapState({
             leaders: (state) => state.leaders,
@@ -33,6 +34,7 @@ export default {
             searchedValue: '',
         };
     },
+
     mounted() {
         this.$store.commit('SET_LEADERS', this.userDate);
     },
