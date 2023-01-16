@@ -43,7 +43,7 @@ export default {
                         <Link />
                         <a target="_blank" :href="userData?.user.website" class="text-sm">{{ userData?.user.website }}</a>
                     </div>
-                    <div class="user_details items-center" v-if="userData?.user?.is_hireable">
+                    <div class="flex items-center" v-if="userData?.user?.is_hireable">
                         <div class="text-sm bg-green-100 green-500 py-1 px-2 w-fit">Hireable</div>
                     </div>
                 </div>

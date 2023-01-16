@@ -36,6 +36,7 @@ export default {
     },
 
     mounted() {
+        if (this.leaders.length === 0 && !this.userDate) return this.$store.commit('SET_FETCH_ERROR');
         this.$store.commit('SET_LEADERS', this.userDate);
     },
 };
@@ -43,7 +44,7 @@ export default {
 
 <template>
     <div class="bg-alt min-h-full">
-        <div class="max-w-[1000px] mx-auto p-5">
+        <div class="max-w-[1000px] mx-auto p-5 jjj">
             <Spinner v-if="isFetching" />
             <div v-else-if="!isError">
                 <Header :searchFunction="searchLeaders" />
