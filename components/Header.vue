@@ -15,7 +15,7 @@ export default {
         <input
             v-on:input="searchFunction"
             placeholder="search"
-            class="p-4 rounded-md w-full max-w-100% mt-5 sm:max-w-[210px] sm:ml-auto lg:mt-0"
+            class="p-4 w-full max-w-100% mt-5 sm:max-w-[210px] sm:ml-auto lg:mt-0 rounded-full"
         />
     </div>
 </template>

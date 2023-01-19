@@ -23,7 +23,7 @@ export default {
 
 <template>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
-        <div v-if="searchedLeaders.length < 1 && searchedValue" class="col-span-full mt-6 text-center accent text-lg">
+        <div v-if="searchedLeaders.length < 1 && searchedValue" class="col-span-full mt-6 text-center text-lg">
             Opss... No user found
         </div>
         <LeaderCard
